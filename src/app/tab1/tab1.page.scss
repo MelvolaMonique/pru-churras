@@ -4,15 +4,15 @@
   justify-self: center;
   height: 100%;
   width: 100%;
+  flex-flow: column;
 }
 
 img{
-  height: 50%;
+ height: 50%;
  border-radius: 50%;
- box-shadow: 10px 10px 5px black;
+ box-shadow: 3px 3px 3px 3px;
 }
 
 .btn{
   cursor: pointer;
-
 }
