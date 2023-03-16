@@ -1,24 +1,62 @@
 np<ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>
-    Contador de pontos Truco
-    </ion-title>
+    <ion-title> Contador de pontos Truco </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-grid>
-    <h1>Valendo 1</h1>
     <ion-row>
-      <ion-col><ion-button color="dark">1</ion-button></ion-col>
-      <ion-col><ion-button color="dark">2</ion-button></ion-col>
-      <ion-col><ion-button color="dark">3</ion-button></ion-col>
-      <ion-col><ion-button color="dark">4</ion-button></ion-col>
-      <ion-col><ion-button color="dark">5</ion-button></ion-col>
+    <ion-col><h1>Valendo: </h1></ion-col>
+    <ion-col><h2>1</h2></ion-col>
+  </ion-row>
+
+    <ion-row>
+      <ion-col><ion-button expand="block" fill="outline" color="dark">1</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark">3</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" >6</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark">9</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark">12</ion-button ></ion-col>
     </ion-row>
-    <h1>
-      Time 1
-    </h1>
+
+    <ion-row>
+    <ion-col><h1>Time 1</h1></ion-col>
+    <ion-col><h1>Time 2</h1></ion-col>
+  </ion-row>
+<ion-row>
+  <ion-col><ion-button expand="block" color="dark">+</ion-button></ion-col>
+  <ion-col></ion-col>
+  <ion-col><ion-button expand="block" color="dark">+</ion-button></ion-col>
+</ion-row>
+    <ion-row>
+      <ion-col id="zero">0</ion-col>
+      <ion-col id="zero2">0</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button expand="block" color="dark">-</ion-button></ion-col>
+      <ion-col></ion-col>
+      <ion-col><ion-button expand="block" color="dark">-</ion-button></ion-col>
+    </ion-row>
+
+    <h1>Partidas</h1>
+    <ion-row>
+    <ion-col  id="pedro"><h1>Time 1</h1></ion-col>
+    
+      <ion-col id="zero3"><h2>0</h2></ion-col>
+
+    <ion-col></ion-col>
+    </ion-row>
+
+    <h1>Time 2</h1>
+    <ion-progress-bar type="indeterminate" color="primary"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="secondary"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="tertiary"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="warning"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="danger"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="light"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar>
+    <ion-progress-bar type="indeterminate" color="dark"></ion-progress-bar>
+
   </ion-grid>
- 
 </ion-content>
