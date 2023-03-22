@@ -8,15 +8,15 @@ np<ion-header [translucent]="true">
   <ion-grid>
     <ion-row>
     <ion-col><h1>Valendo: </h1></ion-col>
-    <ion-col><h2>1</h2></ion-col>
+    <ion-col><h2>{{valendo}}</h2></ion-col>
   </ion-row>
 
     <ion-row>
-      <ion-col><ion-button expand="block" fill="outline" color="dark">1</ion-button></ion-col>
-      <ion-col><ion-button expand="block" fill="outline" color="dark">3</ion-button></ion-col>
-      <ion-col><ion-button expand="block" fill="outline" color="dark" >6</ion-button></ion-col>
-      <ion-col><ion-button expand="block" fill="outline" color="dark">9</ion-button></ion-col>
-      <ion-col><ion-button expand="block" fill="outline" color="dark">12</ion-button ></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" (click)="MudarValendo(1)">1</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" (click)="MudarValendo(3)" >3</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" (click)="MudarValendo(6)">6</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" (click)="MudarValendo(9)">9</ion-button></ion-col>
+      <ion-col><ion-button expand="block" fill="outline" color="dark" (click)="MudarValendo(12)">12</ion-button ></ion-col>
     </ion-row>
 
     <ion-row>
@@ -24,30 +24,36 @@ np<ion-header [translucent]="true">
     <ion-col><h1>Time 2</h1></ion-col>
   </ion-row>
 <ion-row>
-  <ion-col><ion-button expand="block" color="dark">+</ion-button></ion-col>
+  <ion-col><ion-button expand="block" color="dark" (click)="Contador1()">+</ion-button></ion-col>
   <ion-col></ion-col>
-  <ion-col><ion-button expand="block" color="dark">+</ion-button></ion-col>
+  <ion-col><ion-button expand="block" color="dark"  (click)="Contador2()">+</ion-button></ion-col>
 </ion-row>
     <ion-row>
-      <ion-col id="zero">0</ion-col>
-      <ion-col id="zero2">0</ion-col>
+      <ion-col id="zero">{{contarpontos1}}</ion-col>
+      <ion-col id="zero2">{{contarpontos2}}</ion-col>
     </ion-row>
     <ion-row>
-      <ion-col><ion-button expand="block" color="dark">-</ion-button></ion-col>
+      <ion-col><ion-button expand="block" color="dark" (click)=" Diminuir1()">-</ion-button></ion-col>
       <ion-col></ion-col>
       <ion-col><ion-button expand="block" color="dark">-</ion-button></ion-col>
     </ion-row>
 
     <h1>Partidas</h1>
+
     <ion-row>
     <ion-col  id="pedro"><h1>Time 1</h1></ion-col>
-    
-      <ion-col id="zero3"><h2>0</h2></ion-col>
+
+    <ion-col id="zero3"><h2>0</h2></ion-col>
 
     <ion-col></ion-col>
     </ion-row>
+  <ion-row>
+   <ion-col id="pedro"><h1>Time 2</h1></ion-col>
 
-    <h1>Time 2</h1>
+   <ion-col id="zero3"><h2>0</h2></ion-col>
+   <ion-col></ion-col>
+  </ion-row>
+
     <ion-progress-bar type="indeterminate" color="primary"></ion-progress-bar>
     <ion-progress-bar type="indeterminate" color="secondary"></ion-progress-bar>
     <ion-progress-bar type="indeterminate" color="tertiary"></ion-progress-bar>
